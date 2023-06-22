@@ -5,16 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="img/icon.png">
-    <link rel="stylesheet" href="../dist/styles.css">
-    <title>Grua</title>
-    <title>IFC.js</title>
+    <link rel="stylesheet" href="input.css">
+    <!-- <link href="/dist/output.css" rel="stylesheet"> -->
+    <title>Ifc VR</title>
+    <!-- <title>IFC.js</title> -->
 <script defer src="bundle.js"></script></head>
 <body>
     <div class="header">
-        <h1>Grua Ifc Loader</h1>
+        <h2 class="text-green-500">Ifc VR</h2>
       </div>
-      <div class="bg-pink-700">
-        <input type="file" name="load" id="file-input" />
+      <div class="input">
+        <input type="file" name="load" class="rounded-full" id="file-input" />
+        <div class="message-container" id="message-container" style="display: block;">
+          <p class="message" id="id-output" style="display: block;">_</p>
+          <p class="message" id="desc-output" style="display: block;">_</p>
+      </div>
       </div>
       <div class="canvas">
         <canvas id="three-canvas"></canvas>
